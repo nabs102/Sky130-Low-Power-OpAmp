@@ -42,7 +42,7 @@ N -360 80 -340 80 {lab=Vcm}
 C {isource.sym} -160 -90 0 0 {name=I0 value=5u}
 C {sky130_fd_pr/pfet_01v8.sym} -140 -150 0 1 {name=M1
 W=10
-L=1
+L=2
 nf=1
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -56,7 +56,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} -100 -150 0 0 {name=M2
 W=10
-L=1
+L=2
 nf=1
 mult=1
 ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
@@ -117,13 +117,13 @@ value="
 "
 spice_ignore=false
       }
-C {code.sym} 40 30 0 0 {name=s1 only_toplevel=false value=".options savecurrents
+C {code.sym} 40 30 0 0 {name=s1 only_toplevel=false value=".include mirror_diffpair_activeload.save
+.options savecurrents
 
 .control
 	save all
-	dc Vcm 0 1.8 0.01
-	let i_mirror = V2#branch + V3#branch
-	plot i_mirror vs Vcm
+	op
+	write initial.raw
 .endc"}
 C {vsource.sym} -340 130 0 0 {name=Vcm value=0.6 savecurrent=false}
 C {gnd.sym} -340 160 0 0 {name=l6 lab=0}
