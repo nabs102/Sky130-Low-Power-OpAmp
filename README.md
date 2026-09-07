@@ -1,5 +1,7 @@
 # Low-Power CMOS Op-Amp Design
 
+**Portfolio Documentation**: [Link to my Notion](https://nabeelsonaseth.notion.site/Low-Power-CMOS-Op-Amp-Design)
+
 **SkyWater SKY130 · Xschem · Ngspice · IIC-OSIC Docker**
 
 In-progress design of a low-power two-stage CMOS op-amp in the SkyWater 130 nm process.
