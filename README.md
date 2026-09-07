@@ -1,6 +1,6 @@
 # Low-Power CMOS Op-Amp Design
 
-**Portfolio Documentation**: [Link to my Notion](https://nabeelsonaseth.notion.site/Low-Power-CMOS-Op-Amp-Design)
+**Portfolio Documentation**: [Link to my Notion](https://nabeelsonaseth.notion.site/low-power-cmos-op-amp-design)
 
 **SkyWater SKY130 · Xschem · Ngspice · IIC-OSIC Docker**
 
